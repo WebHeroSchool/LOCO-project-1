@@ -2,66 +2,59 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Loco Project</title>
-   <style>
-    @font-face {
-    font-family: Montserrat;
-    src: url(montserrat/Montserrat-Regular.otf);
- }
-
-body {
-  background: black;
-}
-
-.logo {
-  position: absolute;
-  width: 98px;
-  height: 37px;
-  left: 52px;
-  top: 36px;
-
-  font-family: Montserrat;
-  color: #FFFFFF;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 37px;
-  text-align: center;
-  letter-spacing: 0.07em;
-}
-.lang_name {
-  position: absolute;
-  width: 31px;
-  height: 25px;
-  left: 388px;
-  top: 42px;
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: right;
-  color: #FFFFFF;
-}
-
-.lang_checker {
-position: absolute;
-width: 11px;
-height: 5.5px;
-left: 426px;
-top: 54px;
-border: 2px solid #FFFFFF;
-
-}
-</style>
-
+  <title>Loco Project-1</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
-  <body>
-    <header>
-      <div class="logo">LOCO</div>
-      <div class="lang_name">RU</div>
-      <div class="lang_checker" img src="images/Vectorlang.png" alt="sign"></div>
-    </header>
-  </body>
-</html>
+<body>
+  <header class="header">
+    <div class="header__side">
+      <a class="header__logo" href="#">LOCO</a>
+      <div class="header__lang">
+        <div class="lang__name">RU</div>
+      </div>
+    </div>  
+    <div class="burger__menu">
+      <label class="menu__frame">
+        <span></span>
+      </label>
+    </div>       
+  </header>
+  <aside class="aside">
+    <div class="aside__part"></div>
+    <div class="aside__bottom">
+      <ul class="social__list">
+        <li>
+          <a class="social__list_inst" href="#">
+            <img src="images/INST.png" alt="instagram">
+          </a>
+        </li>
+        <li>
+          <a class="social__list_vk" href="#">
+            <img src="images/VK.png" alt="vkontakte">
+          </a>
+        </li>
+        <li>
+          <a class="social__list_fb" href="#">
+            <img src="images/FB.png" alt="facebook">
+          </a>
+        </li>          
+      </ul>
+      <img class="aside__scrooll" src="images/Scrooll.png" alt="scrooll">
+    </div>  
+  </aside>
+  <section class="section">
+    <div class="section__picture"></div>
+    <div class="section__promo">
+      <h1 class="section__title">Новая коллекция</h1>
+      <article>Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</article>
+      <div class="section__wrap">
+        <button class="section__text">ЧИТАТЬ ДАЛЬШЕ</button>
+        <div class="section__other">ДРУГИЕ ПРЕДЛОЖЕНИЯ</div>
+        <button>
+          <a class="section__arrow" href="#">
+            <img src="images/Vector 2.1.png" alt="arrow">
+          </a>
+        </button>
+      </div>
+    </div>
+  </section>
