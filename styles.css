@@ -1,11 +1,5 @@
-@font-face {
-    font-family: Montserrat;
-    src: url(montserrat/Montserrat-Regular.otf);
-}
-
 body {
-  font-family: Montserrat;
-  font-style: normal;
+  font-family: Montserrat, sans-serif;
   margin: 0 auto;
   width: 1440px;
 }
@@ -143,7 +137,6 @@ body {
   font-weight: bold;
   font-size: 80px;
   line-height: 82px;
-  color: #000000;
   margin: 0 0 26px 0;
 }
 
@@ -152,7 +145,6 @@ article {
   font-size: 15px;
   height: 127px;
   line-height: 21px;
-  color: #000000;
   margin-bottom: 36px;
 }
 
@@ -170,7 +162,6 @@ article {
   border: 1.5px solid #000000;
   box-sizing: border-box;
   font-weight: 500;
-  color: #000000;
   font-size: 13px;
   cursor: pointer;
 }
