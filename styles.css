@@ -11,6 +11,7 @@ body {
   height: 92px;
   font-weight: 500;
   cursor: pointer;
+  background: linear-gradient(to right, #000 461px, #fff 461px);
 }
 
 .header__side {
@@ -82,22 +83,32 @@ body {
   bottom: 8px;
   }
 
-.aside__part {
-  position: absolute;
-  width: 461px;
-  height: 900px;
-  left: 0px;
-  top: 0px;
-  background: #000000;
+main {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: flex-start;
 }
 
-.aside__bottom {
+  aside {
+  width: 461px;
+  height: 808px;
+  display: flex;
+  flex-direction: column;
+  }
+
+.aside__part {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+ .aside__bottom {
    width: 100%;
    height: 84px;
-   top: 816px;
-   position: absolute;
    display: flex;
    align-items: flex-start;
+   background: #000;
 }
 
 .social__list {
@@ -106,31 +117,35 @@ body {
    width: 205px;
    list-style: none;
    padding: 0 0 0 52px;
-   margin: 0 462px 0 0;
+   margin: 0 480px 0 0;
 }
 
 .social__list li {
   margin: 0 12px 0 0;
 }
 
+.section {
+  display: flex;
+  width: 1109px;
+  height: 738px;
+  position: relative;
+  left: -280px;
+  padding-top: 80px;
+}
+
 .section__picture {
-  position: absolute;
   width: 549px;
   height: 562px;
-  left: 186px;
-  top: 169px;
-  background: url(images/pete-bellis-432867-unsplash.png);
+  background: url(images/pete-bellis-432867-unsplash.png) no-repeat;
+  margin-right: 60px;
 }
 
 .section__promo {
   height: 400px;
-  width: 500px;
-  position: absolute;
-  top: 263px;
-  left: 789px;
+  width: 491px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  margin-top: 100px;
 }
 
 .section__title {
@@ -146,6 +161,7 @@ article {
   height: 127px;
   line-height: 21px;
   margin-bottom: 36px;
+  width: 467px;
 }
 
 .section__wrap {
