@@ -1,8 +1,11 @@
 body {
   font-family: Montserrat, sans-serif;
   margin: 0 auto;
-  width: 1440px;
+  min-width: 375px;
+  max-width: 1440px;
 }
+
+/* Header */
 
 .header {
   display: flex;
@@ -18,7 +21,7 @@ body {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   height: 92px;
+   min-height: 100%;
    width: 461px;
 }
 
@@ -83,6 +86,29 @@ body {
   bottom: 8px;
   }
 
+  @media (max-width: 962px) {
+	.header {
+		max-height: 69px;
+		background: none;
+	}
+
+	.header__logo {
+  		color: #000;
+    	padding-left: 26px;
+ 	}
+
+ 	.header__lang {
+ 		display: none;
+ 	}
+
+ 	.menu__frame {
+  		max-height: 69px;
+  		max-width: 70px;
+ 	}
+}
+
+/* Main */
+
 main {
 	display: flex;
 	width: 100%;
@@ -90,7 +116,7 @@ main {
 	justify-content: flex-start;
 }
 
-  aside {
+aside {
   width: 461px;
   height: 808px;
   display: flex;
@@ -150,14 +176,14 @@ main {
 
 .section__title {
   font-weight: bold;
-  font-size: 80px;
-  line-height: 82px;
+  font-size: 88px;
+  line-height: 80px;
   margin: 0 0 26px 0;
 }
 
 article {
   font-weight: normal;
-  font-size: 15px;
+  font-size: 17px;
   height: 127px;
   line-height: 21px;
   margin-bottom: 36px;
@@ -194,4 +220,59 @@ button {
 
 .section__arrow {
   cursor: pointer;
+}
+
+.section__scroll_mob {
+	display: none;
+}
+
+@media (max-width: 962px) {
+	aside {
+		display: none;
+	}
+
+	.section {
+		background: url(images/pete-bellis-432867-unsplash-mob.png) no-repeat;
+		background-position: 0 -55px;
+  		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+  		max-width: 961px;
+  		max-height: 526px;
+  		position: inherit;
+  		left: 0;
+  		padding: 0;
+  	}
+
+	.section__picture, 
+	.section__wrap,
+	article {
+		display: none;
+  	}
+
+  	.section__promo {
+  		max-height: 169px;
+  		width: 100%;
+  		display: flex;
+  		flex-direction: column;
+  		margin: 0;
+  	}
+
+  	.section__title {
+  		cursor: pointer;
+  		font-size: 50px;
+  		line-height: 51px;
+  		margin-bottom: 29px;
+  		max-height: 103px;
+  		padding-left: 26px;
+  	}
+
+  	.section__scroll_mob {
+  		cursor: pointer;
+  		display: block;
+  		width: 28px;
+  		height: 14px;
+  		align-self: center;
+  	}
 }
