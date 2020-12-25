@@ -93,7 +93,7 @@ body {
 
 	.header__logo {
   		color: #000;
-    	padding-left: 26px;
+    	padding: 14px 0 18px 26px;
  	}
 
  	.header__lang {
@@ -104,7 +104,13 @@ body {
   		max-height: 69px;
   		max-width: 70px;
  	}
-}
+
+  .menu__frame > span,
+  .menu__frame > span::before {
+    width: 26.4px;
+    height: 2.61px;
+  }
+ }
 
 /* Main */
 
@@ -151,7 +157,7 @@ aside {
 
 .section {
   display: flex;
-  width: 1109px;
+  width: 1100px;
   height: 738px;
   position: relative;
   left: -280px;
@@ -177,13 +183,12 @@ aside {
   font-weight: bold;
   font-size: 80px;
   line-height: 82px;
-  letter-spacing: 2px;
   margin: 0 0 18px 0;
 }
 
 article {
   font-weight: normal;
-  font-size: 17px;
+  font-size: 15px;
   height: 127px;
   line-height: 21px;
   margin-bottom: 36px;
@@ -205,7 +210,7 @@ article {
   box-sizing: border-box;
   font-weight: 500;
   font-size: 13px;
-  margin-right: 22px;
+  margin-right: 36px;
   cursor: pointer;
 }
 
@@ -217,6 +222,7 @@ button {
   border: 0;
   cursor: pointer;
   background: transparent;
+  padding: 0;
 }
 
 .section__arrow {
@@ -227,19 +233,24 @@ button {
 	display: none;
 }
 
+@media (max-width: 1281px) {
+  .section {
+    left: -410px;
+  }
+}
+
 @media (max-width: 962px) {
 	aside {
 		display: none;
 	}
 
 	.section {
-		background: url(images/pete-bellis-432867-unsplash-mob.png) no-repeat;
-		background-position: 0 -55px;
-  		background-size: cover;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-  		max-width: 961px;
+		  background: url(images/pete-bellis-432867-unsplash-mob.png) no-repeat;
+		  background-position: 0 -55px;
+  	  display: flex;
+		  flex-direction: column;
+		  justify-content: flex-end;
+  	  max-width: 961px;
   		max-height: 526px;
   		position: inherit;
   		left: 0;
@@ -264,9 +275,9 @@ button {
   		cursor: pointer;
   		font-size: 50px;
   		line-height: 51px;
-  		margin-bottom: 29px;
+  		margin-bottom: 23px;
   		max-height: 103px;
-  		padding-left: 26px;
+  		padding: 7px 0 0 26px;
   	}
 
   	.section__scroll_mob {
